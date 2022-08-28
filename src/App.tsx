@@ -1,24 +1,24 @@
 import React from "react";
-import logo from "./logo.svg";
 import style from "./App.module.css";
+import { Header, Footer, SideMenu } from "./components";
+import { Row, Col } from "antd";
 
 function App() {
   return (
     <div className={style.App}>
-      <header className={style["App-header"]}>
-        <img src={logo} className={style["App-logo"]} alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className={style["App-link"]}
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      {/* 页面内容 content */}
+      <div className={style["page-content"]}>
+        <Row style={{ marginTop: 20 }}>
+          <Col span={6}>
+            <SideMenu />
+          </Col>
+          <Col span={18}>
+            <div style={{ background: "green" }}>走马灯</div>
+          </Col>
+        </Row>
+      </div>
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@
  * @Author: wenchunrui w_chunrui@163.com
  * @Date: 2022-08-27 21:04:59
  * @LastEditors: wenchunrui w_chunrui@163.com
- * @LastEditTime: 2022-08-27 21:29:51
+ * @LastEditTime: 2022-08-27 21:48:16
  * @FilePath: \react-travel\src\index.tsx
  * @Description:
  *
@@ -12,6 +12,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
+
+import "antd/dist/antd.css";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
